@@ -12,6 +12,7 @@
   - Arrays
   - Character and Strings
   - Structures
+- Module 5: Pointers
 
 
 # Reference textbooks
@@ -21,15 +22,17 @@
 
 
 # Online resources
-- [C reference](https://en.cppreference.com/w/c)
-  - [c++ reference](https://en.cppreference.com)
-- [Clang: a C language family frontend for LLVM](https://clang.llvm.org/)
-  - [Clang Compiler User’s Manual](https://clang.llvm.org/docs/UsersManual.html)
-  - [Clang's documentation!](https://clang.llvm.org/docs/index.html)
-- [MSDN: C language documentation](https://learn.microsoft.com/en-us/cpp/c-language)
-- [MSDN: C++, C, and Assembler documentation](https://learn.microsoft.com/en-us/cpp)
+- *references*
+  - [C reference](https://en.cppreference.com/w/c)
+    - [c++ reference](https://en.cppreference.com)
+  - [Clang: a C language family frontend for LLVM](https://clang.llvm.org/)
+    - [Clang Compiler User’s Manual](https://clang.llvm.org/docs/UsersManual.html)
+    - [Clang's documentation!](https://clang.llvm.org/docs/index.html)
+  - [MSDN: C language documentation](https://learn.microsoft.com/en-us/cpp/c-language)
+  - [MSDN: C++, C, and Assembler documentation](https://learn.microsoft.com/en-us/cpp)
 - *Binary tools*
   - [The LLVM Compiler Infrastructure](https://llvm.org/)
+    - [LLVM MinGW](https://github.com/mstorsjo/llvm-mingw)
   - [GNU Binutils](https://www.gnu.org/software/binutils/)
   - [x64dbg](https://x64dbg.com/)
   - [Unicorn: The Ultimate CPU emulator](https://www.unicorn-engine.org/)
@@ -37,3 +40,12 @@
     - [ROPgadget](https://github.com/JonathanSalwan/ROPgadget)
   - [Keystone: The Ultimate Assembler](https://www.keystone-engine.org/)
   - [Capstone: The Ultimate Disassembler](http://www.capstone-engine.org/)
+- *package managers*
+  - [xrepo](https://github.com/xmake-io/xrepo)
+  - [conan](https://conan.io/)
+  - [vcpkg](https://github.com/microsoft/vcpkg)
+  - [cpm](https://github.com/cpm-cmake/CPM.cmake)
+- *auto builder*
+  - [SCons](https://scons.org/)
+  - [Meson](https://mesonbuild.com/)
+  - [CMake](https://cmake.org/)
