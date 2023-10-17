@@ -49,3 +49,8 @@
   - [SCons](https://scons.org/)
   - [Meson](https://mesonbuild.com/)
   - [CMake](https://cmake.org/)
+- *emulators and RTOS*
+  - [Renode](https://renode.io/)
+  - [Qemu](https://www.qemu.org/)
+  - [RIOT](https://www.riot-os.org/)
+  - [FreeRTOS](https://www.freertos.org/)
