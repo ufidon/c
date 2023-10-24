@@ -17,6 +17,10 @@
 
 # Reference textbooks
 - [C How to Program, 9e](https://github.com/pdeitel/CHowtoProgram9e)
+- [The C Programming Language, 2e](https://www.cs.princeton.edu/~bwk/cbook.html)
+- [21st Century C, 2e](https://www.oreilly.com/library/view/21st-century-c/9781491904428/)
+- [Modern C](https://www.manning.com/books/modern-c)
+- [C Traps and Pitfalls](http://literateprogramming.com/ctraps.pdf)
 - [C++ How to Program, 10e](https://github.com/pdeitel/CPlusPlusHowToProgram10e)
   - [C++11 for Programmers](https://github.com/pdeitel/CPlusPlus11forProgrammers)
 
@@ -25,6 +29,8 @@
 - *references*
   - [C reference](https://en.cppreference.com/w/c)
     - [c++ reference](https://en.cppreference.com)
+  - [The GNU C Reference Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
+    - [The GNU C Programming Tutorial](http://www.crasseux.com/books/ctutorial/)
   - [Clang: a C language family frontend for LLVM](https://clang.llvm.org/)
     - [Clang Compiler User’s Manual](https://clang.llvm.org/docs/UsersManual.html)
     - [Clang's documentation!](https://clang.llvm.org/docs/index.html)
