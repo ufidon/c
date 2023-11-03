@@ -63,3 +63,5 @@
   - [Qemu](https://www.qemu.org/)
   - [RIOT](https://www.riot-os.org/)
   - [FreeRTOS](https://www.freertos.org/)
+- *simulators*
+  - [visual debugger](https://pythontutor.com/)
