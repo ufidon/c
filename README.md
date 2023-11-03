@@ -24,6 +24,9 @@
 - [C++ How to Program, 10e](https://github.com/pdeitel/CPlusPlusHowToProgram10e)
   - [C++11 for Programmers](https://github.com/pdeitel/CPlusPlus11forProgrammers)
 
+# Reference classes
+- [Practical Programming In C](https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/)
+- [CS 106L: Standard C++ Programming](http://web.stanford.edu/class/cs106l/)
 
 # Online resources
 - *references*
