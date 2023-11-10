@@ -25,8 +25,39 @@
   - [C++11 for Programmers](https://github.com/pdeitel/CPlusPlus11forProgrammers)
 
 # Reference classes
-- [Practical Programming In C](https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/)
-- [CS 106L: Standard C++ Programming](http://web.stanford.edu/class/cs106l/)
+- [mit](https://ocw.mit.edu/collections/introductory-programming/)
+  - [6.0001 Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)
+  - [6.0002 Introduction To Computational Thinking And Data Science](https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/)
+  - [6.S095 Programming for the puzzled](https://ocw.mit.edu/courses/6-s095-programming-for-the-puzzled-january-iap-2018/)
+  - [Practical Programming In C](https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/)
+  - ---
+  - [6.005 Software construction](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/)
+  - [6.006 Introduction to algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
+  - [6.370 The battlecode programming competition](https://ocw.mit.edu/courses/6-370-the-battlecode-programming-competition-january-iap-2013/)
+  - ---
+  - [18.S191 Introduction to computational thinking](https://computationalthinking.mit.edu/)
+  - [6.092 Introduction to programming in Java](https://ocw.mit.edu/courses/6-092-introduction-to-programming-in-java-january-iap-2010/)
+  - [6.S096 Introduction to C and C++](https://ocw.mit.edu/courses/6-s096-introduction-to-c-and-c-january-iap-2013/)
+- [stanford](https://www.cs.stanford.edu/courses-overview)
+  - [CS 41: the python programming language](https://stanfordpython.com/)
+  - [CS106A: Programming Methodology](https://web.stanford.edu/class/cs106a/)
+  - [CS 106L: Standard C++ Programming](http://web.stanford.edu/class/cs106l/)
+- [cmu](http://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/)
+  - [CMU 15-112: Fundamentals of Programming and Computer Science](https://www.cs.cmu.edu/~112/)
+- [cornell](https://www.cs.cornell.edu/courseinfo)
+  - [CS 1109: Fundamental Programming Concepts](https://www.cs.cornell.edu/courses/cs1109)
+- [uc berkeley](https://www2.eecs.berkeley.edu/Courses/CS/)
+  - [CS 9C: C for Programmers](https://selfpaced.bitbucket.io/)
+- [columbia](https://www.cs.columbia.edu/education/courses/)
+  - [ENGI 1006 Introduction to Computing for Engineers and Applied Scientists](https://www.cs.columbia.edu/~paine/1006/)
+- [caltech](https://www.cms.caltech.edu/academics/courses)
+  - [CS 11 C track](http://users.cms.caltech.edu/~mvanier/CS11_C/)
+- [gatech](https://catalog.gatech.edu/coursesaz/cs/)
+  - [CS 1301 - Introduction to Computing](https://gt-student-wiki.org/mediawiki/index.php/CS_1301)
+    - [ay2016](https://sites.cc.gatech.edu/classes/AY2016/cs1301_spring/)
+      - [Learning with Python 3 (RLE)](http://openbookproject.net/thinkcs/python/english3e/index.html)
+- [princeton](https://online.princeton.edu/courses)
+  - [Introduction to programming](https://introcs.cs.princeton.edu/)
 
 # Online resources
 - *references*
