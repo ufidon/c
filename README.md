@@ -74,7 +74,13 @@
   - [Programming Windows, 5th Edition](https://www.charlespetzold.com/pw5/index.html)
   - [raygui](https://github.com/raysan5/raygui)
   - [Nuklear](https://github.com/Immediate-Mode-UI/Nuklear)
-  - [libui](https://github.com/andlabs/libui)
+  - [microui](https://github.com/rxi/microui)
+  - [luigi](https://github.com/nakst/luigi)
+  - [LCUI](https://github.com/lc-soft/LCUI)
+  - [horus_ui](https://github.com/7thFACTOR/horus_ui)
+  - ---
+  - [GuiLite](https://github.com/idea4good/GuiLite)
+  - [SFGUI — Simple and Fast Graphical User Interface](https://github.com/TankOs/SFGUI)
 - *Binary tools*
   - [The LLVM Compiler Infrastructure](https://llvm.org/)
     - [LLVM MinGW](https://github.com/mstorsjo/llvm-mingw)
@@ -101,3 +107,11 @@
   - [FreeRTOS](https://www.freertos.org/)
 - *simulators*
   - [visual debugger](https://pythontutor.com/)
+
+# Lists
+- [Awesome C](https://github.com/oz123/awesome-c)
+  - [uncategorized](https://github.com/uhub/awesome-c)
+- [Awesome C++](https://github.com/fffaraz/awesome-cpp)
+  - [doc](https://awesome-cpp.readthedocs.io/en/latest/README.html)
+  - [30dayMakeOS](https://github.com/yourtion/30dayMakeOS)
+- [C++ UI Libraries](https://philippegroarke.com/posts/2018/c++_ui_solutions/)
