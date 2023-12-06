@@ -70,6 +70,11 @@
     - [Clang's documentation!](https://clang.llvm.org/docs/index.html)
   - [MSDN: C language documentation](https://learn.microsoft.com/en-us/cpp/c-language)
   - [MSDN: C++, C, and Assembler documentation](https://learn.microsoft.com/en-us/cpp)
+- *GUI programming*
+  - [Programming Windows, 5th Edition](https://www.charlespetzold.com/pw5/index.html)
+  - [raygui](https://github.com/raysan5/raygui)
+  - [Nuklear](https://github.com/Immediate-Mode-UI/Nuklear)
+  - [libui](https://github.com/andlabs/libui)
 - *Binary tools*
   - [The LLVM Compiler Infrastructure](https://llvm.org/)
     - [LLVM MinGW](https://github.com/mstorsjo/llvm-mingw)
