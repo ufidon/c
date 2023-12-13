@@ -1,18 +1,16 @@
 # C programming
 
 # Tentative topics
-- Module 1: Introduction to Computers and C
-  - Introduction to Computers
-  - Introduction to C Programming
-- Module 2: Formatted Input/Output
-- Module 3: Structured Program Development
-  - Program Control
-  - Functions
-- Module 4: Aggregated Data Structures
-  - Arrays
-  - Character and Strings
-  - Structures
-- Module 5: Pointers
+- [Module 1: Introduction to Computers and C](./mod1/README.md)
+- [Module 2: Formatted Input/Output](./mod2/README.md)
+- [Module 3: Structured Program Development](./mod3/README.md)
+- [Module 4: Aggregated Data Structures](./mod4/README.md)
+
+- ---
+- [Module 5: Pointers](./mod5/README.md)
+- [Module 6: File processing](./mod6/README.md)
+- [Module 7: Data structures](./mod7/README.md)
+- [Module 8: Algorithms](./mod8/README.md)
 
 
 # Reference textbooks
