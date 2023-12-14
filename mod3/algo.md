@@ -309,11 +309,11 @@ int main(void){
 ⚠️ Limitations of floating-point numbers
 ---
 - floating-point data types has limited space
-  - float has 4 bytes
-  - double has 8 bytes
+  - float has 4 bytes with about 7 significant digits
+  - double has 8 bytes with about 15 significant digits
 - so they can only be an approximation of real numbers with too many even infinite digits
   - $\displaystyle \frac{1}{3}=0.\dot{3}$
-- even worse, binary number can't represent may decimal numbers precisely, such as
+- even worse, binary number can't represent may decimal numbers precisely, called _representation error_, such as
   - 0.1 ≈ 0.1000000000000000055511151231257827021181583404541015625 
   - 0.3 + 0.6 ≈ 0.89999999999999991
 - Do not compare floating-point values for equality
