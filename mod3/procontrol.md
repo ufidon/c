@@ -10,7 +10,7 @@ Iteration control
   - $🛂 ⋈ 🚦$, sentinel-controlled iteration
   - ⋈ is a relational operator
 - iteration can be interrupted by
-  - _continue_ or _break_
+  - _continue_ and _break_
 
 
 Counter-Controlled Iteration
@@ -173,15 +173,15 @@ int main(void)
   puts("Enter the letter grades.");
   puts("Enter the EOF character to end input.");
   int grade = 0;
-  // Read character input
+  // ❶ Read character input
   // Assignments have values
   while ((grade = getchar()) != EOF)
   {
-    // show the input character
+    // ❷ show the input character
     printf("%c has the value %d.\n", grade, grade);
     switch (grade)
-    {
-    case 'A':
+    {// ❸ handle legal grade letters
+    case 'A': // 🄋 only constant integral expression can be tested
     case 'a':
         ++aCount;
         break;
@@ -201,7 +201,7 @@ int main(void)
     case 'f':
         ++fCount;
         break;
-    case '\n':
+    case '\n': // ❹ ignore newline, tab and blank characters
     case '\t':
     case ' ':
         break;
@@ -221,6 +221,9 @@ int main(void)
 }
 ```
 
+- a character set and its numeric values are defined in ASCII (American Standard Code for Information Interchange)   
+   - ASCII is a subset of Unicode
+
 
 ❓Questions
 ---
@@ -232,12 +235,43 @@ int main(void)
   - returns the value of the lhs
 
 
+switch Statement Flowchart
+---
+```mermaid
+flowchart TD
+  s((start)) --> ca{case a}
+  ca -->|true| caa[case a actions]
+  caa -->ba[break]
+  ba-->e
+  cb{case b}
+  ca -->|false| cb
+  cb -->|true| cbb[case b actions]
+  cbb -->bb[break]
+  bb-->e
+  cz{case z}
+  cb -->|false| cz
+  d[default]
+  cz -->|false|d
+  cz -->|true| za[case z actions]
+  za-->bz[break]
+  bz-->e
+  e((end))
+  d-->e
+```
+
+
 📝 Practice
 ---
--  ASCII (American Standard Code for Information Interchange) defines a character set and its numeric values 
-   - it is a subset of Unicode
+- [Integer types and range of values](https://en.cppreference.com/w/c/language/arithmetic_types)
 
 
 🔭 Explore
 ---
+- [Signed number representations](https://en.wikipedia.org/wiki/Signed_number_representations#Sign-and-magnitude_method)
+
+
+🔭 Explore
+---
+- [Integer constant](https://en.cppreference.com/w/c/language/integer_constant)
+- [Constant expressions](https://en.cppreference.com/w/c/language/constant_expression)
 - [Comma operator](https://en.wikipedia.org/wiki/Comma_operator)
