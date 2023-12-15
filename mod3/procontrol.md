@@ -239,20 +239,20 @@ switch Statement Flowchart
 ---
 ```mermaid
 flowchart TD
-  s((start)) --> ca{case a}
-  ca -->|true| caa[case a actions]
+  s((start)) --> ca{case 1}
+  ca -->|true| caa[case 1 actions]
   caa -->ba[break]
   ba-->e
-  cb{case b}
+  cb{case 2}
   ca -->|false| cb
-  cb -->|true| cbb[case b actions]
+  cb -->|true| cbb[case 2 actions]
   cbb -->bb[break]
   bb-->e
-  cz{case z}
-  cb -->|false| cz
+  cz{case n}
+  cb -.->|false| cz
   d[default]
   cz -->|false|d
-  cz -->|true| za[case z actions]
+  cz -->|true| za[case n actions]
   za-->bz[break]
   bz-->e
   e((end))
