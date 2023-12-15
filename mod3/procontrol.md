@@ -275,3 +275,273 @@ flowchart TD
 - [Integer constant](https://en.cppreference.com/w/c/language/integer_constant)
 - [Constant expressions](https://en.cppreference.com/w/c/language/constant_expression)
 - [Comma operator](https://en.wikipedia.org/wiki/Comma_operator)
+
+
+do...while iteration statement
+---
+- loop actions before testing loop condition
+  - find the output of the program below
+```c
+#include <stdio.h>
+
+int main(void){
+  int counter = 1;
+
+  do{
+    printf("%d ", counter);
+  }while(++counter <= 5)
+}
+```
+
+- do...while statement flowchart
+
+```mermaid
+flowchart LR
+  s((start))
+  s-->a[actions]
+  a-->c{conditions}
+  c-->|true|a
+  c-->|false|e
+  e((end))
+```
+
+
+break and continue statements
+---
+- break and continue statements are used to alter program flow
+  - break jumps out of the iteration or switch block contains it
+    - used in while, for, do...while, or switch statement
+    - jump to the statement following the breaking block
+  - continue jumps to the beginning of the iteration block contains it
+    - used in while, for, or do...while statement
+    - jump to the loop condition test in while and do...while
+    - jump to the update statement then the loop-condition test in for
+
+
+💡 Demo: find program output
+---
+- break iteration
+```c
+#include <stdio.h>
+int main(void)
+{
+   int x = 1;
+   for (; x <= 10; ++x)
+   {
+      if (x == 5)
+      {
+         break; // ⤵️
+      }
+      printf("%d ", x);
+   } /* ⦿ */ 
+   printf("\nBroke out of loop at x == %d\n", x);
+}
+```
+- continue iteration
+```c
+#include <stdio.h>
+int main(void)
+{
+   for (int x = 1; x <= 10; /* ⦿ */ ++x)
+   {
+      if (x == 5)
+      {
+         continue; // ⤴️
+      }
+      printf("%d ", x);
+   }
+   puts("\nUsed continue to skip printing the value 5");
+}
+```
+
+Logical operators
+---
+- used to build complex condition statement
+- three logical operators
+  - logical and: `&&`
+    - `e1 && e2`: to be true both e1 and e2 must be true
+  - logical or: `||`
+    - `e1 || e2`: to be false both e1 and e2 must be false
+  - logical not: `!`
+    - `!c` : negate the truth of c
+    - `!(a==b)` is equivalent to `a != b`
+- short-circuit evaluation 
+  - evaluates the and/or statement from left to right
+  - stops moving rightward if the truth is determined
+    - `e1 && e2 && ... && en` stops at the first false expression
+    - `e1 || e2 || ... || en` stops at the first true expression
+  - improves performance by skipping the rest
+- precedence
+  - `! ▷ <,<=,>,>= ▷ ==, != ▷ && ▷ || ▷ =`
+
+
+Boolean literals
+---
+- _Bool is the keyword for a boolean type
+- bool, defined in `<stdbool.h>` is a shorthand of _Bool
+- a boolean variable holds only two possible values: 0 or 1
+  - value 0 is false
+  - any nonzero value is true
+  - 0 is defined as false, 1 as true in `<stdbool.h>`
+
+
+Equality (==) vs. assignment (=)
+---
+- misusing equality and assignment causes runtime logic errors
+  - `x=7` vs. `x==7`
+  - `x=y` vs. `x==y`
+- lvalues (left values) can be used as lhs and rhs of =
+- rvalues (right values) can be used only as rhs of =
+- a tip: 
+  - `7==x` can't be confused with `7=x` since `7=x` causes a syntax error
+
+
+
+Three forms of basic controls
+---
+- sequence
+  - `action 1; action 2; ...; action n`
+- selection
+  - if statement (single selection)
+    - `if(condition){actions}`
+  - if...else statement (double selection)
+    - `if(condition){actions for true}else{actions for false}`
+  - switch statement (multiple selection)
+   ```c
+   switch(x){
+    case 1:
+      case 1 actions;
+      break;
+    case 2:
+      case 2 actions;
+      break;
+    ...
+    case n:
+      case n actions;
+      break;
+    default:
+      default actions;
+   }
+   ```
+- iteration
+  - while statement
+    - `while(condition){actions}`
+  - do...while statement
+    - `do{actions}while(condition)`
+  - for statement
+    - `for(initializations; condition; updates){actions}`
+
+
+```mermaid
+flowchart LR
+  subgraph Iteration
+    subgraph "while statement"
+    direction TB
+      sw((start))
+      sw-->cw{condition}
+      cw-->|true|aw[actions]
+      aw-->cw
+      cw-->|false|ew
+      ew((end))
+    end
+    subgraph "do...while statement"
+      direction TB
+      sd((start))
+      sd-->ad[actions]
+      ad-->cd{conditions}
+      cd-->|true|ad
+      cd-->|false|ed
+      ed((end))
+    end
+    subgraph "for statement"
+      sf((start))
+      sf-->if[initializations]
+      if-->cf{condition}
+      cf-->|true|af[actions]
+      af-->uf[update]
+      uf-->cf
+      cf-->|false|ef
+      ef((end))
+    end
+  end
+  subgraph Selection
+    direction TB
+    subgraph "if statement"
+      direction TB
+      s1((start))
+      s1-->c1{condition}
+      c1-->|true|as1[actions]
+      as1-->e1
+      c1-->|false|e1
+      e1((end))
+    end
+    subgraph "if...else statement"
+    direction TB
+      s2((start))
+      s2-->c2{condition}
+      c2-->|true|a21[actions for true]
+      a21-->e2
+      c2-->|false|a22[actions for false]
+      a22-->e2      
+      e2((end))
+    end
+    subgraph "switch statement"
+      direction TB
+      s((start)) --> ca{case 1}
+      ca -->|true| caa[case 1 actions]
+      caa -->ba[break]
+      ba-->e
+      cb{case 2}
+      ca -->|false| cb
+      cb -->|true| cbb[case 2 actions]
+      cbb -->bb[break]
+      bb-->e
+      cz{case n}
+      cb -.->|false| cz
+      d[default]
+      cz -->|false|d
+      cz -->|true| za[case n actions]
+      za-->bz[break]
+      bz-->e
+      e((end))
+      d-->e
+    end    
+  end
+  subgraph Sequence
+    direction LR
+    s3((start))
+    s3-->a13
+    a13[action 1]
+    a13-->a12[action 2]
+    a12-.->a1n[action n]
+    a1n -->e3
+    e3((end))
+  end  
+```
+
+
+Build programs using basic controls
+---
+- ⚠️ Any C program can be expressed with only 
+  - three forms of control
+    - sequence, if statement and while statement
+    - consider control as compound action
+  - in only two ways:
+    - stacking: put controls in sequence 
+    - nesting: any action can be replaced by any control
+
+
+📝 Practice: secure C programming
+---
+- check function scanf's return value
+- check the range of physical quantity
+  - valid age in years
+  - valid height in centimeters, etc.
+
+
+
+🔭 Explore
+---
+- [statements](https://en.cppreference.com/w/c/language/statements)
+- [Logical operators](https://en.cppreference.com/w/c/language/operator_logical)
+- [C Operator Precedence](https://en.cppreference.com/w/c/language/operator_precedence)
