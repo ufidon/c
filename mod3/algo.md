@@ -58,11 +58,11 @@ if (alive == true) puts("Enjoy your life!");
 
 ```mermaid
 flowchart LR
-  s((start)) --> a{alive}
+  s((prev)) --> a{alive}
   a-->|true|L(Enjoy life)
   a-->|false|e
   L-->e
-  e((end))
+  e((next))
 ```
 
 _if...else_ statement
@@ -80,12 +80,12 @@ puts((weight>160)?"Eat less":"Eat more");
 
 ```mermaid
 flowchart LR
-  s((start)) --> w{weight >= 160}
+  s((prev)) --> w{weight >= 160}
   w-->|Y|L(Eat less)
   w-->|N|M(Eat more)
   L-->e
   M-->e
-  e((end))
+  e((next))
 ```
 
 Nested if...else statements

@@ -87,7 +87,7 @@ for (int j = 44; j >= 0; j -= 11) printf("%d\n", i);
 Applications of the for statement
 ---
 - Summing the even integers from 2 to 100
-  - $\displaystyle S=∑_{n=2, n|2}^{100}n$
+  - $\displaystyle S=∑_{n=2 | n +=2}^{100}n$
   ```c
   #include <stdio.h>
 
@@ -239,7 +239,7 @@ switch Statement Flowchart
 ---
 ```mermaid
 flowchart TD
-  s((start)) --> ca{case 1}
+  s((prev)) --> ca{case 1}
   ca -->|true| caa[case 1 actions]
   caa -->ba[break]
   ba-->e
@@ -255,7 +255,7 @@ flowchart TD
   cz -->|true| za[case n actions]
   za-->bz[break]
   bz-->e
-  e((end))
+  e((next))
   d-->e
 ```
 
@@ -297,12 +297,12 @@ int main(void){
 
 ```mermaid
 flowchart LR
-  s((start))
+  s((prev))
   s-->a[actions]
   a-->c{conditions}
   c-->|true|a
   c-->|false|e
-  e((end))
+  e((next))
 ```
 
 
@@ -437,57 +437,57 @@ flowchart LR
   subgraph Iteration
     subgraph "while statement"
     direction TB
-      sw((start))
+      sw((prev))
       sw-->cw{condition}
       cw-->|true|aw[actions]
       aw-->cw
       cw-->|false|ew
-      ew((end))
+      ew((next))
     end
     subgraph "do...while statement"
       direction TB
-      sd((start))
+      sd((prev))
       sd-->ad[actions]
       ad-->cd{conditions}
       cd-->|true|ad
       cd-->|false|ed
-      ed((end))
+      ed((next))
     end
     subgraph "for statement"
-      sf((start))
+      sf((prev))
       sf-->if[initializations]
       if-->cf{condition}
       cf-->|true|af[actions]
       af-->uf[update]
       uf-->cf
       cf-->|false|ef
-      ef((end))
+      ef((next))
     end
   end
   subgraph Selection
     direction TB
     subgraph "if statement"
       direction TB
-      s1((start))
+      s1((prev))
       s1-->c1{condition}
       c1-->|true|as1[actions]
       as1-->e1
       c1-->|false|e1
-      e1((end))
+      e1((next))
     end
     subgraph "if...else statement"
     direction TB
-      s2((start))
+      s2((prev))
       s2-->c2{condition}
       c2-->|true|a21[actions for true]
       a21-->e2
       c2-->|false|a22[actions for false]
       a22-->e2      
-      e2((end))
+      e2((next))
     end
     subgraph "switch statement"
       direction TB
-      s((start)) --> ca{case 1}
+      s((prev)) --> ca{case 1}
       ca -->|true| caa[case 1 actions]
       caa -->ba[break]
       ba-->e
@@ -503,19 +503,19 @@ flowchart LR
       cz -->|true| za[case n actions]
       za-->bz[break]
       bz-->e
-      e((end))
+      e((next))
       d-->e
     end    
   end
   subgraph Sequence
     direction LR
-    s3((start))
+    s3((prev))
     s3-->a13
     a13[action 1]
     a13-->a12[action 2]
     a12-.->a1n[action n]
     a1n -->e3
-    e3((end))
+    e3((next))
   end  
 ```
 
