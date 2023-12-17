@@ -263,7 +263,7 @@ Generate random number
 ---
 - widely used in simulation and game playing
 - a random integer value can be obtained using `int rand()` defined in `<stdlib.h>`
-  - range: 0 to RAND_MAX (at least 32767)
+  - range: 0 to RAND_MAX (at least 32767, depends on the OS)
   - the sequence generated can be repeated with the same seed set by `srand(seed)`
   - a good idea to randomize the seed each run time `srand(time(NULL))`
 - generate random integers between a and b: `int n = a + rand()%b`
@@ -473,7 +473,7 @@ unsigned long long int factorial(int n) {
 ```
 - ⚠️ Factorials become large quickly
     - Integer types have limitations
-    - Is $21!$ and $22!$ right above?
+    - Are $21!$ and $22!$ right above?
 - A recursive function is one that 
   - calls itself either directly 
   - or indirectly through another function
