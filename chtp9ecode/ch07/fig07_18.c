@@ -18,9 +18,10 @@ int main(void) {
 
    // process user's choice
    while (choice >= 0 && choice < 3) {
-      // invoke function at location choice in array f and pass
-      // choice as an argument                              
-      (*f[choice])(choice);                                
+      // call as a pointer                            
+      (*f[choice])(choice);
+      // call as a function
+      f[choice](choice);
 
       printf("%s", "Enter a number between 0 and 2, 3 to end: ");
       scanf("%d", &choice);
