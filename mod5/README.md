@@ -89,8 +89,8 @@ void cubeByReference(int *nPtr)
 }
 ```
 - in formal function parameters,
-  - `int a[]` is equivalent to `int *a`
-    - `const int a[]` to `const int *a`
+  - `int a[]` is equivalent to `int * const a`
+    - `const int a[]` to `const int * const a`
 - Four ways to pass to a function a pointer to data
   - 🅐 a non-constant pointer to non-constant data
   - 🅑 a non-constant pointer to constant data
