@@ -1,0 +1,6 @@
+- [C Reference Card ANSI 2.2](./res/CReferenceCardANSI.pdf)
+  - [modern-c-features](https://github.com/AnthonyCalandra/modern-c-features)
+- [C/C++ cheatsheet](https://github.com/crazyguitar/cppcheatsheet)
+- [Systems Programming Cheat Sheet](https://github.com/jstrieb/systems-programming-cheat-sheet)
+- [Awesome Cheatsheet](https://github.com/detailyang/awesome-cheatsheet)
+- [List of Free Learning Resources In Many Languages](https://github.com/EbookFoundation/free-programming-books)
