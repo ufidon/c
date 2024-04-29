@@ -24,7 +24,8 @@
 
 # Reference classes
 - [mit](https://ocw.mit.edu/collections/introductory-programming/)
-  - [6.0001 Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)
+  - [6.0001 Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/)
+    - [textbook code](https://github.com/guttag/Intro-to-Computation-and-Programming)
   - [6.0002 Introduction To Computational Thinking And Data Science](https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/)
   - [6.S095 Programming for the puzzled](https://ocw.mit.edu/courses/6-s095-programming-for-the-puzzled-january-iap-2018/)
   - [Practical Programming In C](https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/)
