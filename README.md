@@ -114,3 +114,6 @@
   - [doc](https://awesome-cpp.readthedocs.io/en/latest/README.html)
   - [30dayMakeOS](https://github.com/yourtion/30dayMakeOS)
 - [C++ UI Libraries](https://philippegroarke.com/posts/2018/c++_ui_solutions/)
+
+# Tips
+- [解决clangd找不到iostream的错误](https://blog.csdn.net/weixin_61184943/article/details/131820087)
